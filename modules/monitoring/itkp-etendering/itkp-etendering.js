@@ -2,7 +2,7 @@
 (function(){
   'use strict';
 
-  const API_URL = 'ISI_URL_WEB_APP_FAST_V2_DI_SINI';
+  const API_URL = 'https://script.google.com/macros/s/AKfycbzCeSXFiv7gqFPmuOvfc8ADcsmwGVDYQnpiADi7YQZeyj1nDNQOKQ0EIX5H0VobFJPt/exec';
   const MODULE = 'etendering';
   const DATASET = '';
   const TITLE = 'Monitoring eTendering Cepat';
