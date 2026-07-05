@@ -1,0 +1,72 @@
+
+:root{
+  --fast-bg:#f5f8fc;
+  --fast-card:#fff;
+  --fast-text:#132238;
+  --fast-muted:#64748b;
+  --fast-line:#dce6f2;
+  --fast-navy:#123a72;
+  --fast-blue:#2563eb;
+  --fast-green:#16a34a;
+  --fast-yellow:#ca8a04;
+  --fast-red:#dc2626;
+  --fast-shadow:0 16px 42px rgba(15,23,42,.08);
+  --fast-radius:22px;
+}
+.fast-page{width:100%;color:var(--fast-text);font-family:Inter,"Segoe UI",Arial,sans-serif;line-height:1.5}
+.fast-page *{box-sizing:border-box}
+.fast-hero{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;padding:22px;border-radius:26px;background:linear-gradient(135deg,#0f2e5c,#195aa0 65%,#0f766e);color:#fff;box-shadow:var(--fast-shadow);margin-bottom:16px}
+.fast-title{margin:0;font-size:clamp(22px,3vw,36px);line-height:1.1;font-weight:950;letter-spacing:-.04em}
+.fast-subtitle{margin:9px 0 0;max-width:960px;color:rgba(255,255,255,.86);font-size:clamp(13px,1.4vw,15px)}
+.fast-toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.fast-btn{min-height:40px;border:0;border-radius:13px;padding:0 15px;background:#fff;color:var(--fast-navy);font-weight:900;cursor:pointer;box-shadow:0 8px 18px rgba(15,23,42,.10)}
+.fast-btn.primary{color:#fff;background:linear-gradient(135deg,#123a72,#2563eb)}
+.fast-btn.soft{background:#eef4fb;color:#123a72;border:1px solid #dbe6f2;box-shadow:none}
+.fast-btn:disabled{opacity:.55;cursor:not-allowed}
+.fast-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:14px}
+.fast-card{background:var(--fast-card);border:1px solid var(--fast-line);border-radius:var(--fast-radius);box-shadow:var(--fast-shadow);padding:18px}
+.fast-stat{grid-column:span 3;min-height:118px}
+.fast-stat-label{color:var(--fast-muted);font-size:11px;font-weight:950;letter-spacing:.06em;text-transform:uppercase}
+.fast-stat-value{margin-top:9px;color:var(--fast-navy);font-size:clamp(22px,2.4vw,30px);font-weight:950;letter-spacing:-.04em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fast-stat-note{margin-top:8px;color:var(--fast-muted);font-size:12px}
+.fast-filter{grid-column:span 12}
+.fast-filter-row{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:12px;align-items:end}
+.fast-field{grid-column:span 3;display:flex;flex-direction:column;gap:7px}
+.fast-field.wide{grid-column:span 5}
+.fast-field.small{grid-column:span 2}
+.fast-field.action{grid-column:span 2}
+.fast-field label{font-size:11px;font-weight:950;color:#40516a}
+.fast-input,.fast-select{width:100%;min-height:42px;border:1px solid #cfdbea;border-radius:13px;padding:0 12px;background:#fff;color:var(--fast-text);font-size:14px;outline:none}
+.fast-input:focus,.fast-select:focus{border-color:#7ba8f8;box-shadow:0 0 0 4px rgba(37,99,235,.10)}
+.fast-table-card{grid-column:span 12;padding:0;overflow:hidden}
+.fast-table-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px;border-bottom:1px solid var(--fast-line)}
+.fast-section-title{margin:0;color:var(--fast-navy);font-size:18px;font-weight:950}
+.fast-section-subtitle{margin:4px 0 0;color:var(--fast-muted);font-size:13px}
+.fast-table-wrap{overflow:auto}
+.fast-table{width:100%;min-width:980px;border-collapse:separate;border-spacing:0}
+.fast-table th{position:sticky;top:0;z-index:2;background:#f1f6fd;color:var(--fast-navy);text-align:left;font-size:12px;font-weight:950;padding:13px;border-bottom:1px solid var(--fast-line);white-space:nowrap}
+.fast-table td{padding:13px;border-bottom:1px solid #edf2f7;font-size:13px;vertical-align:top;max-width:360px;overflow-wrap:anywhere}
+.fast-table tr:hover td{background:#f8fbff}
+.fast-badge{display:inline-flex;align-items:center;min-height:25px;padding:0 10px;border-radius:999px;font-size:11px;font-weight:900;white-space:nowrap}
+.fast-badge.green{background:#dcfce7;color:#15803d}.fast-badge.blue{background:#dbeafe;color:#1d4ed8}.fast-badge.yellow{background:#fef3c7;color:#a16207}.fast-badge.red{background:#fee2e2;color:#b91c1c}.fast-badge.gray{background:#f1f5f9;color:#475569}
+.fast-pagination{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 18px;border-top:1px solid var(--fast-line);flex-wrap:wrap}
+.fast-page-buttons{display:flex;gap:8px;flex-wrap:wrap}
+.fast-page-btn{min-width:38px;height:38px;border:1px solid #d6e1ef;border-radius:11px;background:#fff;color:var(--fast-navy);font-weight:900;cursor:pointer}
+.fast-page-btn.active{background:var(--fast-navy);color:#fff}
+.fast-loading{background:linear-gradient(90deg,#eef3f8 25%,#f8fbff 37%,#eef3f8 63%);background-size:400% 100%;animation:fastShimmer 1.2s ease infinite;border-radius:12px;min-height:18px}
+.fast-error{display:none;margin-top:12px;padding:12px 14px;border-radius:14px;background:#fff1f2;border:1px solid #fecdd3;color:#b91c1c;font-weight:800}
+.fast-error.show{display:block}
+.fast-login{min-height:520px;display:grid;place-items:center;padding:24px}
+.fast-login-card{width:min(980px,100%);display:grid;grid-template-columns:1.05fr .95fr;border-radius:28px;background:#fff;border:1px solid #dce6f2;box-shadow:var(--fast-shadow);overflow:hidden}
+.fast-login-brand{padding:38px;background:linear-gradient(135deg,#0f2e5c,#195aa0 65%,#0f766e);color:#fff}
+.fast-login-brand h2{margin:12px 0;font-size:clamp(32px,4vw,52px);line-height:.98;font-weight:950;letter-spacing:-.06em}
+.fast-login-brand p{color:rgba(255,255,255,.86);line-height:1.7}
+.fast-login-form{padding:38px}
+.fast-login-form h3{margin:0 0 8px;font-size:30px;font-weight:950;color:#132238}
+.fast-login-form p{margin:0 0 20px;color:#64748b}
+.fast-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px}
+.fast-tab{min-height:38px;border:1px solid #dbe6f2;background:#fff;color:#40516a;border-radius:12px;padding:0 14px;font-weight:900;cursor:pointer}
+.fast-tab.active{background:var(--fast-navy);color:#fff}
+@keyframes fastShimmer{0%{background-position:100% 0}100%{background-position:0 0}}
+@media(max-width:1180px){.fast-stat{grid-column:span 6}.fast-field,.fast-field.wide,.fast-field.small,.fast-field.action{grid-column:span 6}}
+@media(max-width:760px){.fast-hero{flex-direction:column;border-radius:20px;padding:18px}.fast-toolbar{width:100%}.fast-btn{flex:1}.fast-stat,.fast-field,.fast-field.wide,.fast-field.small,.fast-field.action{grid-column:span 12}.fast-card{border-radius:18px;padding:14px}.fast-table-head{flex-direction:column;align-items:flex-start}.fast-pagination{align-items:flex-start;flex-direction:column}.fast-table{min-width:760px}.fast-login-card{grid-template-columns:1fr}.fast-login-brand,.fast-login-form{padding:24px}}
