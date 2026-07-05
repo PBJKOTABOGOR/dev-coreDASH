@@ -415,7 +415,7 @@ function initScrollAnimation() {
   };
 }
 
-const DASHBOARD_API_URL = 'ISI_URL_WEB_APP_FAST_V2_DI_SINI';
+const DASHBOARD_API_URL = 'https://script.google.com/macros/s/AKfycbzCeSXFiv7gqFPmuOvfc8ADcsmwGVDYQnpiADi7YQZeyj1nDNQOKQ0EIX5H0VobFJPt/exec';
 
 const DASHBOARD_SHEETS = {
   itkp: {
